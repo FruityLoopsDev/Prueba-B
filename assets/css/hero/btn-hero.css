@@ -1,0 +1,12 @@
+.hero__buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 3rem;
+    /* width: 3rem; */
+    /* height: 2rem; */
+}
+
+.hero__button {
+    margin-right: 10px;
+}

@@ -1,0 +1,6 @@
+.hero__image {
+        width: 100%;
+        max-width: 280px;
+        padding: 2rem;
+        border-radius: 100%;
+    }

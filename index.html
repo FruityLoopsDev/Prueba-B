@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/bases.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/header/logo.css">
+    <link rel="stylesheet" href="assets/css/header/menu-container.css">
+    <link rel="stylesheet" href="assets/css/header/menu.css">
+    <link rel="stylesheet" href="assets/css/header/menu-toggle.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/hero/hero-text.css">
+    <link rel="stylesheet" href="assets/css/hero/hero-image.css">
+    <link rel="stylesheet" href="assets/css/hero/btn-hero.css">
+</head>
+
+<body style="height: 100%;">
+    <script async src="script.js"></script>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/header/avatar.png" class="avatar" alt="Avatar" width="60"
+                    height="60"></a>
+            <a href="index.html" class="menu__logo">César Cruz Dev.</a>
+        </div>
+        <div class="menu__container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="menu" id="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#inicio" class="menu__link">Sobre mi</a></li>
+                    <li class="menu__item"><a href="#formaciones" class="menu__link">Proyectos</a></li>
+                    <li class="menu__item"><a href="#habilidades" class="menu__link">Habilidades</a></li>
+                    <li class="menu__item"><a href="#proyectos" class="menu__link">Formacion</a></li>
+                    <li class="menu__item"><a href="#contacto" class="menu__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="section">
+            <!-- <h2 class="section__title">Inicio</h2> -->
+            <div class="section__content">
+                <div class="hero">
+                    <div class="hero__text">
+                        <h1 class="hero__title">Hola Mundo Mi nombre es César</h1>
+                        <h2 class="hero__sub">Desarrollador Front End > UX | UI Designer</h2>
+                        <p class="hero__description">Aquí podrás conocer mis proyectos y habilidades</p>
+                    </div>
+                    <div class="hero__image">
+                        <img src="assets/img/hero-imagen.png" class="hero__image" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+            <div class="hero__buttons">
+                <button class="hero__button">Curriculum</button>
+                <button class="hero__button">LinkedIn</button>
+                <button class="hero__button">Github</button>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section">
+            <h2 class="section__title">Formaciones</h2>
+            <div class="section__content">
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <button class="accordion__btn" type="button">Programador Front End</button>
+                        <div class="accordion__content" style="visibility: hidden;">
+                            <p>Contenido del Proyecto 1</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__btn" type="button">UX Designer</button>
+                        <div class="accordion__content" style="visibility: hidden;">
+                            <p>Contenido del Proyecto 2</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__btn" type="button">Project Manager</button>
+                        <div class="accordion__content" style="visibility: hidden;">
+                            <p>Contenido del Proyecto 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <h2 class="section__title">Habilidades</h2>
+            <div class="section__content">
+                <div class="skills">
+                    <div class="skills__container">
+                        <div class="skills__box">
+                            <img src="assets/img/logos/css-logo.svg" class="skills__box__img" alt="Desarrollo Frontend">
+                            <h3 class="skills__title">CSS3</h3>
+                            <p class="skills__text"></p>
+                        </div>
+                        <div class="skills__box">
+                            <img src="assets/img/logos/html-logo.svg" class="skills__box__img" alt="Frameworks">
+                            <h3 class="skills__title">HTML5</h3>
+                            <p class="skills__text"></p>
+                        </div>
+                        <div class="skills__box">
+                            <img src="assets/img/logos/git-logo.svg" class="skills__box__img" alt="Diseño Responsive">
+                            <h3 class="skills__title">Git</h3>
+                            <p class="skills__text"></p>
+                        </div>
+                        <div class="skills__box">
+                            <img src="assets/img/logos/js-logo.svg" class="skills__box__img"
+                                alt="Experiencia de Usuario">
+                            <h3 class="skills__title">JavaScript</h3>
+                            <p class="skills__text"></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="section">
+            <h2 class="section__title">Contacto</h2>
+            <div class="section__content">
+                <form class="contact-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p class="footer__copy">&copy; 2023 Mi Portafolio. Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
